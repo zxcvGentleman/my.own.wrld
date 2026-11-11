@@ -301,3 +301,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Home now has one straightforward title and introduction, three consistent navigation cards (WTBF, zxcvGentleman / Fortnite profile, Socials), and a simple `.split-bottom` message explaining that many sections, projects, features and details will be added in the future.
 - Removed the Home-only visual system, orbit illustration, status labels and custom decorative backgrounds by restoring `public/assets/css/style.css` to the complete pre-Home shared stylesheet. WTBF, Socials and Fortnite profile styles — including the cleaned Pizza Party background — are preserved.
 - Kept the existing bottom navigation and all existing page destinations. No JavaScript or new dependencies added.
+
+
+### 2026-11-11 — Rebuild Socials in the Fortnite glass-dashboard style
+- Replaced the plain `public/socials.html` list with a full-screen layout modeled on the Fortnite profile architecture: oversized independent SOCIALS wordmark, centered translucent identity bar for `zxcvGentleman`, main links panel and separate ABOUT panel.
+- Preserved all five original destinations and descriptive copy: Twitch, Fortnite Telegram, WTBF Telegram, AIR developers and TikTok. Each link now has a compact monogram tile, clear title/description, and external-link affordance.
+- Added page-scoped `.socials-*` styles in `public/assets/css/style.css`: dark temporary backdrop (awaiting the user's custom image), red-tinted translucent panels, border/shadow system aligned to the Fortnite dashboard, two-column links grid on desktop and stacked mobile layout. The bottom navigation active state now uses a matching red accent on Socials.
+- No other page layouts or link destinations changed. The custom background image will be connected after the user provides it.
