@@ -111,3 +111,70 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(prefers-reduced-motion:reduce) {
   .wtbf-glow { filter:none; }
 }
+
+/* Fortnite-inspired player profile */
+.profile-body { background:#0b1025; overflow-x:hidden; }
+.profile-main { min-height:100svh; }
+.player-screen {
+  position:relative; isolation:isolate; min-height:100svh; overflow:hidden;
+  display:flex; align-items:center; padding:clamp(82px,10vh,120px) var(--gutter) 130px;
+  background:
+    linear-gradient(118deg,rgba(8,14,39,.98) 0%,rgba(14,28,72,.96) 52%,rgba(35,24,91,.96) 100%);
+}
+.player-gridlines {
+  position:absolute; z-index:-1; inset:0; opacity:.2; pointer-events:none;
+  background-image:linear-gradient(rgba(126,173,255,.24) 1px,transparent 1px),linear-gradient(90deg,rgba(126,173,255,.24) 1px,transparent 1px);
+  background-size:54px 54px; mask-image:linear-gradient(90deg,transparent,#000 35%,#000);
+}
+.player-glow { position:absolute; z-index:-1; border-radius:50%; filter:blur(3px); pointer-events:none; }
+.player-glow-blue { width:min(65vw,850px); aspect-ratio:1; top:-35%; right:-12%; background:radial-gradient(circle,rgba(32,131,255,.38),transparent 68%); }
+.player-glow-violet { width:min(55vw,700px); aspect-ratio:1; bottom:-48%; left:15%; background:radial-gradient(circle,rgba(130,62,255,.32),transparent 70%); }
+.player-content { position:relative; z-index:2; width:100%; max-width:1180px; margin:0 auto; }
+.player-topline { display:flex; justify-content:space-between; align-items:center; gap:18px; margin-bottom:clamp(22px,4vh,42px); }
+.player-kicker,.player-status,.player-overline,.player-stat span,.player-panel-footer {
+  font-size:10px; font-weight:800; letter-spacing:.18em; text-transform:uppercase;
+}
+.player-kicker { color:#a9c8ff; }
+.player-status { display:inline-flex; align-items:center; gap:9px; padding:10px 13px; color:#e5f1ff; background:rgba(34,112,220,.16); border:1px solid rgba(118,177,255,.32); border-radius:4px; }
+.player-status i { width:7px; height:7px; border-radius:50%; background:#8dffce; box-shadow:0 0 12px #8dffce; }
+.player-name {
+  margin:0 0 clamp(30px,5vh,54px); color:#fff;
+  font-size:clamp(52px,10vw,126px); line-height:.88; letter-spacing:-.075em;
+  font-weight:900; text-transform:uppercase; text-shadow:0 8px 36px rgba(0,0,0,.28);
+}
+.player-name span { color:#7fc2ff; }
+.player-panel {
+  position:relative; max-width:920px; padding:clamp(24px,4vw,42px);
+  background:linear-gradient(125deg,rgba(20,39,85,.9),rgba(19,25,63,.86));
+  border:1px solid rgba(132,183,255,.36); border-left:4px solid #55aaff;
+  box-shadow:0 24px 80px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.08);
+  clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);
+}
+.player-panel-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; padding-bottom:19px; border-bottom:1px solid rgba(153,194,255,.2); }
+.player-overline { color:#8ebdff; }
+.player-panel-heading h2 { color:#fff; font-size:clamp(27px,4vw,42px); letter-spacing:-.055em; }
+.player-bio { max-width:760px; margin:23px 0 28px; color:#d3def3; font-size:clamp(14px,1.4vw,16px); line-height:1.8; }
+.player-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.player-stat { min-height:86px; padding:17px 18px; display:flex; flex-direction:column; justify-content:space-between; gap:12px; background:rgba(4,12,36,.48); border:1px solid rgba(132,183,255,.19); }
+.player-stat span { color:#8ca8d4; font-size:9px; }
+.player-stat strong { color:#fff; font-size:clamp(13px,1.6vw,18px); letter-spacing:.015em; }
+.player-panel-footer { display:flex; justify-content:space-between; align-items:center; margin-top:22px; color:#7fa6df; font-size:9px; }
+.player-crosshair { color:#ffd35a; font-size:21px; line-height:1; }
+.player-side-mark {
+  position:absolute; right:2vw; bottom:9vh; color:rgba(145,182,255,.07);
+  font-size:clamp(130px,24vw,360px); line-height:.8; font-weight:950; letter-spacing:-.12em;
+  pointer-events:none;
+}
+.profile-body .bottom-nav { background:rgba(12,20,48,.78); border-color:rgba(143,184,255,.24); }
+.profile-body .nav-link.active { color:#07152c; background:#8fc8ff; }
+@media(max-width:700px) {
+  .player-screen { min-height:100svh; padding-block:82px 120px; }
+  .player-topline { align-items:flex-start; flex-direction:column; }
+  .player-name { font-size:clamp(48px,12vw,76px); overflow-wrap:anywhere; }
+  .player-panel { padding:22px 18px; }
+  .player-panel-heading { align-items:flex-start; flex-direction:column-reverse; gap:8px; }
+  .player-stats { grid-template-columns:1fr; }
+  .player-stat { min-height:68px; }
+  .player-side-mark { right:-3vw; bottom:13vh; }
+}
+@media(prefers-reduced-motion:reduce) { .player-glow { filter:none; } }
