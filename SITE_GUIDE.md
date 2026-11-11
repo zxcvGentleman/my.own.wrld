@@ -195,3 +195,8 @@ No shared JavaScript is currently required. All website copy is English.
 - Replaced the malformed first Battle Bus asset with a fresh optimized JPEG generated directly from the user's uploaded image and committed at `public/assets/images/fortnite-battle-bus.jpg`.
 
 - Styled the external Fortnite Tracker link with the profile's yellow accent in `public/assets/css/style.css`.
+
+
+### 2026-11-11 — Fortnite hero artwork refresh
+- Replaced the profile hero's previous Battle Bus background with the matching Fortnite Pizza Party artwork supplied by the user (1920×1080). The same original artwork is hosted by Epic Developer Community's official CDN; CSS now references its original PNG source rather than a compressed thumbnail.
+- Hero background remains `center center / cover`; overlay/vignette and layout are unchanged.
