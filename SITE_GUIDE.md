@@ -220,3 +220,12 @@ No shared JavaScript is currently required. All website copy is English.
 - Added two decorative pizza slices to `public/profile.html`, positioned at the left and right sides of the profile statistics/About area and hidden from assistive technology.
 - Added CSS 3D-style perspective rotation, subtle vertical floating, depth shadows, staggered reverse motion, and reduced-motion support in `public/assets/css/style.css`.
 - Decorations are hidden on narrow mobile screens to avoid covering profile content; no JavaScript or external image dependency added.
+
+
+### 2026-11-11 — Fortnite profile glass dashboard redesign
+- Rebuilt `public/profile.html` with a Fortnite wordmark, compact player identity header, monogram avatar, direct Fortnite Tracker link, working in-page Overview/About anchors, and responsive dashboard.
+- Removed the previously added decorative pizza-slice elements completely.
+- Replaced the cream dashboard palette with dark red/black translucent glass panels, red active states, and warm yellow details to match the user's supplied visual reference.
+- Preserved only the existing profile facts (started Season 21, approximately 4,000 hours, esports goal) and existing About copy; did not copy mockup-only rank, K/D, tournament, or win numbers.
+- Reworked `public/assets/css/style.css` profile section; no JavaScript required. Responsive layout stacks cards and About panel on smaller screens; site bottom navigation remains shared.
+- Automatic stats integration remains a separate potential feature. Fortnite Tracker has no publicly available Fortnite API and prohibits scraping; a separate Fortnite stats provider documents Battle Royale stats endpoints requiring an API key. Any future integration should keep its key server-side (for example, in repository secrets) and clearly distinguish supported BR stats from ranked/event/tournament data.
