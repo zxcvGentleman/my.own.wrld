@@ -36,9 +36,13 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 .profile-card { min-height:170px; padding:clamp(22px,3vw,38px); background:var(--surface); border:1px solid var(--line); border-radius:22px; }
 .profile-card h2 { margin:0 0 10px; font-size:clamp(20px,2.3vw,29px); letter-spacing:-.055em; }
 .profile-card p { max-width:480px; margin:0; color:var(--muted); font-size:14px; line-height:1.75; }
-.social-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; max-width:1000px; margin-top:clamp(40px,7vh,76px); }
-.social-card { min-height:116px; padding:24px 26px; display:flex; align-items:center; justify-content:space-between; gap:20px; background:var(--surface); border:1px solid var(--line); border-radius:20px; transition:background .2s,border-color .2s,transform .2s; }
+.social-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; max-width:1120px; margin-top:clamp(40px,7vh,76px); }
+.social-card { min-height:132px; padding:25px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px; background:var(--surface); border:1px solid var(--line); border-radius:20px; transition:background .2s,border-color .2s,transform .2s; }
 .social-card:hover { background:var(--surface-hover); border-color:rgba(255,255,255,.35); transform:translateY(-2px); }
+.social-card > span:first-child { min-width:0; }
+.social-card:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+.social-arrow { transition:transform .2s,border-color .2s; }
+.social-card:hover .social-arrow { transform:translate(2px,-2px); border-color:rgba(255,255,255,.35); }
 .social-name { display:block; font-size:clamp(18px,2vw,24px); font-weight:680; letter-spacing:-.04em; }
 .social-handle { display:block; margin-top:7px; color:var(--muted); font-size:12px; }
 .social-arrow { width:36px; height:36px; display:grid; place-items:center; flex:0 0 auto; border:1px solid var(--line); border-radius:50%; color:var(--text); font-size:17px; }
@@ -48,12 +52,17 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 .nav-link:hover { color:var(--text); background:rgba(255,255,255,.08); }
 .nav-link.active { color:#111; background:var(--accent); }
 .nav-link:focus-visible,a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+@media(max-width:1000px) {
+ .social-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .social-card:last-child { grid-column:1 / -1; width:calc(50% - 7px); justify-self:center; }
+}
 @media(max-width:700px) {
 
  .page { min-height:75svh; padding-block:84px 120px; }
  .home-page { min-height:78svh; }
  .home-page h1 { font-size:clamp(58px,15vw,108px); }
  .profile-grid,.social-grid { grid-template-columns:1fr; }
+ .social-card:last-child { grid-column:auto; width:100%; }
  .profile-card { min-height:0; }
  .split-bottom { align-items:flex-start; flex-direction:column; }
  .bottom-nav { gap:1px; padding:5px; }
