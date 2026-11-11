@@ -333,3 +333,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the monogram-letter rounded squares and circular arrow decorations from all five cards in `public/socials.html`.
 - Simplified `.socials-link-card` to text-only cards with consistent left alignment and adjusted padding/height so the layout remains balanced without the icons.
 - Removed obsolete icon and arrow styles and updated reduced-motion/mobile rules. Background, card colors, links, heading and navigation remain unchanged.
+
+
+### 2026-11-11 — Replace Socials background with supplied pink wall image
+- Added the user's supplied pink wall photograph as `public/assets/images/socials-pink-wall.webp`, optimized from 2048×1365 to 1280×853 WebP.
+- Updated only the `.socials-body` background image reference and its subtle readability overlay. The photo fills the entire Socials page with `background-size: cover`.
+- Kept the existing minimalist platform cards, names, links, card layout and bottom navigation unchanged.
