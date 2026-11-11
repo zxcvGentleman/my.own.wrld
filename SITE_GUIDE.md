@@ -238,3 +238,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the `PLAYER PROFILE` kicker and circular Z avatar from the profile identity block.
 - Kept the player's name and the real external Fortnite Tracker button.
 - Updated responsive profile header grid rules in `public/assets/css/style.css` to fit the simplified identity row.
+
+
+### 2026-11-11 — Simplify Fortnite header and move Tracker logo
+- Removed the overlay wordmark from `public/profile.html`; the Fortnite lettering remains only where it is part of the Pizza Party hero artwork itself.
+- Removed the `FORTNITE PLAYER` status label beneath the player name.
+- Removed the text-based Fortnite Tracker button from the hero header.
+- Added a compact image-only link using the Tracker Network logo asset (`https://fortnitetracker.com/Images/General/logo.png`) beside `COMPETITIVE MINDSET` in the About footer. It opens the user's confirmed Fortnite Tracker profile in a new tab.
+- Removed the decorative crown from the About footer and adjusted the profile heading to use the now-uncluttered player name.
