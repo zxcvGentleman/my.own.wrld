@@ -280,3 +280,10 @@ No shared JavaScript is currently required. All website copy is English.
 - The previous background-rebuild step assembled a corrupt WebP file from incorrectly sized Base64 chunks. Removed that build step so deployment no longer produces or references the invalid file.
 - Restored the profile background CSS to the prior image source so the page can display its backdrop again.
 - The separate Fortnite wordmark and all profile layout elements are unchanged. A clean, directly stored background asset remains to be uploaded in a later correction.
+
+
+### 2026-11-11 — Connect the naturally cleaned full-page Pizza Party background
+- Added the user's Pizza Party artwork as a naturally cleaned 1920×1080 WebP background. The embedded Fortnite lettering is removed directly in the image; the surrounding red gradient and decorative pizza/box artwork remain intact.
+- Stored the WebP as five Base64 chunks under `.github/assets/fortnite-pizza-bg-clean/part-*.b64`; the Pages workflow reconstructs it into `public/assets/images/fortnite-pizza-clean-natural.webp` before upload.
+- Added build assertions for the exact 37,236-byte file size and the `WEBP` signature. This prevents publishing an incomplete or malformed image.
+- Updated `public/assets/css/style.css` to use the local reconstructed image as the full-page background. The independent original Fortnite wordmark remains a separate object above it. Removed all temporary CSS paint-over behavior; profile content, statistics, About panel, Tracker logo button and bottom navigation remain unchanged.

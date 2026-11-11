@@ -24,6 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Rebuild clean Fortnite profile background
+        shell: bash
+        run: |
+          mkdir -p public/assets/images
+          cat .github/assets/fortnite-pizza-bg-clean/part-*.b64 | base64 --decode > public/assets/images/fortnite-pizza-clean-natural.webp
+          test "$(stat -c%s public/assets/images/fortnite-pizza-clean-natural.webp)" -eq 37236
+          test "$(dd if=public/assets/images/fortnite-pizza-clean-natural.webp bs=1 skip=8 count=4 2>/dev/null)" = "WEBP"
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
