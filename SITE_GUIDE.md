@@ -187,3 +187,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Added the user-uploaded Fortnite Battle Bus image at `public/assets/images/fortnite-battle-bus.jpg` (optimized JPEG for the full-bleed hero background).
 - Updated the `.fn-hero-art` background in `public/assets/css/style.css` to use the repository-local image instead of the previous Epic CDN artwork.
 - Kept the player-name layout, lower profile statistics, and responsive hero treatment unchanged.
+
+
+### 2026-11-11 — Fortnite Tracker profile link
+- Added a direct external link to the user's confirmed Fortnite Tracker profile in the `PLAYER PROFILE` heading of `public/profile.html`.
+- The supplied profile page could not be read by the web retrieval service (request blocked), so no rank, match, or tournament values were copied into the site. Wait for readable page data or a screenshot before adding exact statistics.
+- The user reports that the Battle Bus hero image is rendering incorrectly. The currently committed image asset needs replacement with the exact uploaded binary; do not treat the previous manually encoded blob as a verified image.
