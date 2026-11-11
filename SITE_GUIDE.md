@@ -347,3 +347,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the thin multicolor card edge accent on Socials; added a brighter glass hover state and matching keyboard focus outline.
 - Restyled only `.socials-body .bottom-nav` and its `.nav-link` states with soft pink glass and a deep rose active pill.
 - No shared/global navigation styles, Home, WTBF or Fortnite profile styles, page content, or link destinations were changed.
+
+
+### 2026-11-11 — Fresh Pages deployment after Socials control styling
+- Socials-only rose-glass control styling is in the preceding commit.
+- The first Pages deployment attempt could not retrieve its uploaded artifact; retrying the same run produced a duplicate `github-pages` artifact. A fresh push run is used for the clean deployment rather than reusing that run's artifact history.
+- No additional visual changes in this entry.
