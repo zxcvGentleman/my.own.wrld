@@ -148,3 +148,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Added responsive dashboard styling in public/assets/css/style.css: card geometry, emblem rings, HUD labels, stat visualizations, atmospheric lighting, background orbs, and mobile stacking.
 - Kept all player claims grounded in supplied facts; decorative bars and shapes are visual styling, not additional gameplay statistics.
 - Preserved the shared bottom navigation and English-only interface.
+
+
+### 2026-11-11 — Fortnite visual profile rebuild
+- Replaced the previous emblem-and-text dashboard with a full-bleed Fortnite key-art hero, large player-name treatment, Season 21 chip, and layered Battle Royale HUD labels in `public/profile.html`.
+- Rebuilt the lower profile as colorful game-style stat cards, an about-player panel, and a dedicated Fortnite esports goal panel.
+- Added responsive `.fn-*` styles in `public/assets/css/style.css`, using bold yellow/cyan accents, angular clipped panels, saturated blue/purple gradients, and mobile-specific layout changes.
+- The hero uses Epic Games Store image asset hosted on Epic's CDN; all personal stats and claims remain limited to user-provided details.
