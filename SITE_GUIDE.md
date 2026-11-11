@@ -181,3 +181,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the `01 — 03` decorative counter from the `PLAYER PROFILE` heading in `public/profile.html`.
 - The uploaded replacement hero image is available in the conversation, but is not yet in the repository; the current GitHub integration exposes text/blob operations but no direct binary upload action. Keep the existing hero image until the uploaded asset can be committed.
 - Fortnite Tracker stats were not imported because a matching player profile for `zxcvGentleman` could not be verified. Do not invent stats; request the exact Epic display name or the direct Fortnite Tracker profile URL.
+
+
+### 2026-11-11 — Fortnite hero image replacement
+- Added the user-uploaded Fortnite Battle Bus image at `public/assets/images/fortnite-battle-bus.jpg` (optimized JPEG for the full-bleed hero background).
+- Updated the `.fn-hero-art` background in `public/assets/css/style.css` to use the repository-local image instead of the previous Epic CDN artwork.
+- Kept the player-name layout, lower profile statistics, and responsive hero treatment unchanged.
