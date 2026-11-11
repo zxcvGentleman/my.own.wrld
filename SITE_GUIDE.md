@@ -162,3 +162,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Kept the Fortnite key-art hero, player name, concise playtime/season facts, and one short About section.
 - Replaced the final `.fn-*` profile style block in `public/assets/css/style.css` with a restrained layout: clean typography, a simple three-column stats row, subtle dividers, and a compact mobile stack.
 - Preserved the shared bottom navigation and English-only copy.
+
+
+### 2026-11-11 — Profile typography cleanup
+- Removed the small `FORTNITE PLAYER` eyebrow from the hero in `public/profile.html`.
+- Increased the size and contrast of hero metadata, section labels, stat captions, and About copy in the final profile CSS block in `public/assets/css/style.css`.
+- Kept the simplified hero and statistics layout.
+- Competitive rank and tournament history are not added yet: the Fortnite.gg search did not verify a matching player profile from the display name alone. Waiting for the exact Epic display name or player profile URL to avoid importing another player's results.
+- The supplied ChatGPT share URL could not be opened as an image; waiting for the image uploaded directly in chat before replacing the hero artwork.
