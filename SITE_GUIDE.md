@@ -112,6 +112,11 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Socials heading cleanup
 - Removed the decorative period after `Socials` in the `public/socials.html` page heading.
 
+### 2026-11-11 — Fortnite-inspired profile redesign
+- Rebuilt `public/profile.html` as a Fortnite-inspired player profile screen with a blue/violet Battle Royale atmosphere, grid backdrop, player-name hero, overview panel, and responsive stat tiles.
+- Preserved the existing player description and represented only supplied facts in the stat tiles: started in Season 21, nearly 4,000 hours, and competitive focus.
+- Added page-scoped `.player-*` styles and profile-specific bottom-navigation colors in `public/assets/css/style.css`; no external game assets or trademarks were embedded.
+
 ### 2026-11-11 — Global text selection disabled
 - Disabled text highlighting/selection across all site elements with `user-select: none` and the WebKit-prefixed equivalent in the global universal CSS rule.
 
