@@ -208,3 +208,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Redesigned the details area as a warm cream panel; stats are separate rounded cards with red values; About is a light card with a red accent border.
 - Styled the Fortnite Tracker link as a red button and updated the profile bottom navigation to a translucent dark-red glass treatment with a yellow active state.
 - Kept the existing profile content and Tracker destination unchanged; this change is visual only.
+
+
+### 2026-11-11 — Correct Fortnite Pizza Party hero image source
+- Fixed the profile hero image in `public/assets/css/style.css`: it had still been pointing to the old local `fortnite-battle-bus.jpg` asset, which is why the old Battle Bus image remained visible.
+- Updated `.fn-hero-art` to use the exact original Pizza Party JPEG hosted on Epic Developer Community's forum CDN: `https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg`.
+- Kept the current crop, overlay, and Pizza Party color theme unchanged.
