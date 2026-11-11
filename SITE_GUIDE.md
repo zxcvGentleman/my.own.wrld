@@ -261,3 +261,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Added a fixed, softly feathered gradient cleanup layer over the original embedded lettering so the background no longer shows its old title.
 - Added `public/assets/images/fortnite-wordmark-original.webp`, a transparent pixel-derived cutout of the exact Fortnite lettering and registered mark extracted from the user's original Pizza Party image. It is displayed independently at the top; its lettering is not retyped or regenerated.
 - The user name, stats/About cards, clickable square Fortnite Tracker logo and bottom navigation remain unchanged.
+
+
+### 2026-11-11 — Expand background wordmark removal
+- The user reported that the previous central cleanup patch left part of the embedded Fortnite wordmark visible.
+- Enlarged and recentered the cleanup layer in `public/assets/css/style.css` to cover the original title region on desktop and portrait/mobile viewports. Kept the separately extracted original Fortnite wordmark at the top as its own object.
+- “Competitive mindset” translates as “змагальне мислення” or “націленість на змагання”; no visible page copy was changed for this translation question.
