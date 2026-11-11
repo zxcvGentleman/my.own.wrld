@@ -200,3 +200,11 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Fortnite hero artwork refresh
 - Replaced the profile hero's previous Battle Bus background with the matching Fortnite Pizza Party artwork supplied by the user (1920×1080). The same original artwork is hosted by Epic Developer Community's official CDN; CSS now references its original PNG source rather than a compressed thumbnail.
 - Hero background remains `center center / cover`; overlay/vignette and layout are unchanged.
+
+
+### 2026-11-11 — Fortnite Pizza Party profile theme
+- Restyled the profile page in `public/assets/css/style.css` to coordinate with the red Fortnite Pizza Party hero artwork.
+- Replaced the previous navy/blue profile palette with tomato-red, warm cream, and pizza-yellow accents.
+- Redesigned the details area as a warm cream panel; stats are separate rounded cards with red values; About is a light card with a red accent border.
+- Styled the Fortnite Tracker link as a red button and updated the profile bottom navigation to a translucent dark-red glass treatment with a yellow active state.
+- Kept the existing profile content and Tracker destination unchanged; this change is visual only.
