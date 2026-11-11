@@ -12,7 +12,8 @@ The About page has been removed.
 
 ## Shared assets
 - `public/assets/css/style.css` — Shared styles, design tokens, layout, and responsive behavior
-- `public/assets/js/main.js` — Dynamic footer year
+
+The site has no top header or footer; navigation is fixed at the bottom of each page.
 
 ## Hosting
 GitHub Pages deploys the `public/` directory using `.github/workflows/deploy.yml`.
