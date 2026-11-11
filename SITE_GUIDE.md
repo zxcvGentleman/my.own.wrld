@@ -254,3 +254,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Enlarged the image-only Tracker button so the complete supplied square logo is clearly visible; the image remains a link to the player's Fortnite Tracker profile.
 
 - Final display sizing: the supplied square Tracker logo is displayed as a 72×72 image-only button with no extra letter/icon or button label; it is fully clickable and opens the user's profile.
+
+
+### 2026-11-11 — Single full-page Pizza Party backdrop and separate Fortnite wordmark
+- Removed the duplicate hero artwork layer from `public/profile.html`; the Pizza Party art now appears once as the page-wide body backdrop.
+- Added a fixed, softly feathered gradient cleanup layer over the original embedded lettering so the background no longer shows its old title.
+- Added `public/assets/images/fortnite-wordmark-original.webp`, a transparent pixel-derived cutout of the exact Fortnite lettering and registered mark extracted from the user's original Pizza Party image. It is displayed independently at the top; its lettering is not retyped or regenerated.
+- The user name, stats/About cards, clickable square Fortnite Tracker logo and bottom navigation remain unchanged.

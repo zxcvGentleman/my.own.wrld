@@ -252,16 +252,15 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(max-width:370px){.player-stat-grid{grid-template-columns:1fr}.player-stat-hours{grid-column:auto}}
 
 /* Fortnite Pizza Party glass profile */
-.fn-profile-body{min-height:100vh;background-color:#160609!important;color:#fff;background-image:linear-gradient(180deg,rgba(34,2,5,.22) 0%,rgba(17,2,6,.88) 58%,#160609 100%),url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
-.fn-profile{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;padding-bottom:100px}
-.fn-hero{position:relative;isolation:isolate;min-height:500px;display:flex;align-items:flex-end;overflow:hidden;padding:34px var(--gutter) 26px}
-.fn-hero-art,.fn-hero-vignette{position:absolute;inset:0}
-.fn-hero-art{z-index:-2;background:url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg") center 30%/cover no-repeat;transform:scale(1.005)}
-.fn-hero-vignette{z-index:-1;background:linear-gradient(180deg,rgba(108,8,9,.12) 0%,rgba(39,2,7,.32) 38%,rgba(17,2,6,.96) 100%),linear-gradient(90deg,rgba(90,0,0,.25),rgba(90,0,0,.08) 55%,rgba(90,0,0,.28))}
+.fn-profile-body{position:relative;isolation:isolate;min-height:100vh;background-color:#160609!important;color:#fff;background-image:linear-gradient(180deg,rgba(18,2,7,.06) 0%,rgba(19,2,7,.20) 48%,rgba(12,1,5,.72) 100%),url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
+.fn-background-cleanup{position:fixed;z-index:0;left:50.8%;top:50%;transform:translate(-50%,-50%);width:max(42vw,72vh);height:max(19vh,12vw);pointer-events:none;border-radius:48%;background:linear-gradient(165deg,#f3482e 0%,#f13d2b 50%,#e72c25 100%);filter:blur(18px);opacity:.99}
+.fn-profile{position:relative;z-index:1;isolation:isolate;min-height:100svh;overflow:hidden;padding-bottom:100px;background:transparent}
+.fn-hero{position:relative;isolation:isolate;min-height:0;display:block;overflow:visible;padding:clamp(30px,5vh,64px) var(--gutter) 18px}
+.fn-wordmark{display:block;width:clamp(260px,43vw,560px);height:auto;max-height:none;object-fit:contain;margin:0 auto clamp(26px,4vh,42px);filter:drop-shadow(0 7px 18px rgba(0,0,0,.24))}
 .fn-hero-content{width:100%;max-width:1160px;margin:0 auto}
-.fn-profile-heading{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding:22px 26px;background:rgba(25,5,10,.72);border:1px solid rgba(255,255,255,.17);border-radius:24px;box-shadow:0 18px 55px rgba(15,0,5,.28),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.fn-profile-heading{display:flex;align-items:center;justify-content:center;gap:24px;max-width:760px;margin:0 auto;padding:22px 26px;text-align:center;background:rgba(25,5,10,.72);border:1px solid rgba(255,255,255,.17);border-radius:24px;box-shadow:0 18px 55px rgba(15,0,5,.28),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 .fn-identity h1{margin:0;color:#fff;font-size:clamp(28px,4.5vw,52px);line-height:1.05;font-weight:950;letter-spacing:-.055em;text-shadow:0 3px 16px rgba(0,0,0,.35);overflow-wrap:anywhere}
-.fn-details{position:relative;max-width:1160px;margin:0 auto;padding:18px var(--gutter) 130px}
+.fn-details{position:relative;max-width:1160px;margin:0 auto;padding:14px var(--gutter) 130px}
 .fn-dashboard{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:14px;align-items:stretch}
 .fn-stats-panel,.fn-about{min-width:0;border:1px solid rgba(255,105,112,.3);border-radius:20px;background:linear-gradient(145deg,rgba(37,8,16,.82),rgba(16,4,10,.84));box-shadow:0 18px 50px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.055);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
 .fn-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:100%;padding:23px 12px}
@@ -283,20 +282,19 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 .fn-profile-body .nav-link{color:#ffe8e8}
 .fn-profile-body .nav-link.active{background:#ff424a!important;color:#fff!important}
 @media(max-width:850px){
- .fn-hero{min-height:480px}
- .fn-profile-heading{grid-template-columns:minmax(0,1fr) auto;gap:17px;padding:19px}
- .fn-avatar{width:80px;height:80px;font-size:46px}
- .fn-tracker-link{grid-column:1/-1;justify-self:center}
+ .fn-hero{padding-top:34px}
+ .fn-profile-heading{max-width:100%;padding:19px}
  .fn-dashboard{grid-template-columns:1fr}
  .fn-about{min-height:160px}
 }
 @media(max-width:650px){
- .fn-profile-body{background-attachment:scroll}
- .fn-hero{min-height:460px;padding:35px var(--gutter) 20px}
- .fn-hero-art{background-position:54% center}
- .fn-profile-heading{display:flex;align-items:center;gap:13px;padding:16px;border-radius:18px}
+ .fn-profile-body{background-attachment:fixed;background-size:cover}
+ .fn-background-cleanup{width:80vh;height:22vh;left:50.8%;top:50%}
+ .fn-hero{padding:26px var(--gutter) 14px}
+ .fn-wordmark{width:clamp(245px,76vw,420px);margin-bottom:24px}
+ .fn-profile-heading{padding:16px;border-radius:18px}
  .fn-identity h1{font-size:clamp(25px,7.2vw,37px)}
- .fn-details{padding-top:10px}
+ .fn-details{padding-top:8px}
  .fn-stats{grid-template-columns:1fr;padding:9px 15px}
  .fn-stat{display:grid;grid-template-columns:40px minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;row-gap:4px;padding:15px 4px}
  .fn-stat+.fn-stat{border-left:0;border-top:1px solid rgba(255,255,255,.15)}
@@ -305,3 +303,4 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
  .fn-stat strong{font-size:27px}
  .fn-about{padding:19px;gap:12px}
 }
+@media(prefers-reduced-motion:reduce){.fn-about-tracker{transition:none}}
