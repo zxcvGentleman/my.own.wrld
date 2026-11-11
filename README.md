@@ -1,19 +1,20 @@
 # my.own.wrld
 
-Personal website of zxcvGentleman.
+Personal website of zxcvGentleman. The website content and interface are in English.
 
 ## Pages
 - `public/index.html` — Home
-- `public/wtbf.html` — WTBF
-- `public/profile.html` — zxcvGentleman profile
-- `public/socials.html` — social links
-- `public/about.html` — intentionally empty About page, content to be added later
+- `public/wtbf.html` — WTBF clothing brand
+- `public/profile.html` — Personal profile
+- `public/socials.html` — Social media links
+
+The About page has been removed.
 
 ## Shared assets
-- `public/assets/css/style.css` — all shared styles and design tokens
-- `public/assets/js/main.js` — shared language toggle and footer year
+- `public/assets/css/style.css` — Shared styles, design tokens, layout, and responsive behavior
+- `public/assets/js/main.js` — Dynamic footer year
 
 ## Hosting
 GitHub Pages deploys the `public/` directory using `.github/workflows/deploy.yml`.
 
-See [SITE_GUIDE.md](SITE_GUIDE.md) for the page map, CSS/JS variables, navigation behavior, and change log.
+See [SITE_GUIDE.md](SITE_GUIDE.md) for the page map, CSS variables, file locations, and change log.
