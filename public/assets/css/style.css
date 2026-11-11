@@ -252,7 +252,7 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(max-width:370px){.player-stat-grid{grid-template-columns:1fr}.player-stat-hours{grid-column:auto}}
 
 /* Fortnite Pizza Party glass profile */
-.fn-profile-body{min-height:100vh;background:#160609!important;color:#fff;background-image:linear-gradient(180deg,rgba(34,2,5,.22) 0%,rgba(17,2,6,.88) 58%,#160609 100%),url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
+.fn-profile-body{min-height:100vh;background-color:#160609!important;color:#fff;background-image:linear-gradient(180deg,rgba(34,2,5,.22) 0%,rgba(17,2,6,.88) 58%,#160609 100%),url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg");background-position:center top;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
 .fn-profile{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;padding-bottom:100px}
 .fn-hero{position:relative;isolation:isolate;min-height:500px;display:flex;align-items:flex-end;overflow:hidden;padding:34px var(--gutter) 26px}
 .fn-hero-art,.fn-hero-vignette{position:absolute;inset:0}
