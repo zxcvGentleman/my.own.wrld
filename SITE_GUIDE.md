@@ -52,7 +52,7 @@ Important CSS classes:
 - `.home-page`, `.home-copy`, `.text-link` — Home page.
 - `.split-bottom`, `.meta` — WTBF information row.
 - `.profile-grid`, `.profile-card` — Profile cards.
-- `.social-grid`, `.social-card`, `.social-name`, `.social-handle`, `.social-arrow` — Social links.
+- `.social-grid`, `.social-card`, `.social-name`, `.social-handle` — Social links.
 - `.bottom-nav`, `.nav-link`, `.nav-link.active` — Fixed navigation.
 
 ## JavaScript
@@ -76,7 +76,7 @@ No shared JavaScript is currently required. All website copy is English.
 - All website interface text and metadata must remain in English.
 - The About page is deleted and must not be reintroduced unless requested.
 - Keep the interface restrained; avoid unnecessary decoration and filler copy.
-- Social links use polished cards and clear outbound indicators.
+- Social links use clean, text-only cards without decorative arrow icons.
 - Social cards use a balanced three-column desktop grid, a centered final card in the two-column tablet layout, and a single-column mobile layout.
 - Preserve responsive behavior and reduced-motion support.
 
@@ -107,7 +107,7 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Social button layout refinement
 - Reorganized the Socials cards into a balanced three-column desktop grid.
 - Centered the fifth card on the two-column tablet layout and kept a clean single-column mobile layout.
-- Standardized card height and spacing, and refined the outbound-arrow hover and keyboard-focus states.
+- Standardized card height and spacing; removed the circular outbound-arrow decorations for a cleaner appearance.
 
 ### 2026-11-11 — English-only update
 - Translated all website interface copy and metadata into English.
