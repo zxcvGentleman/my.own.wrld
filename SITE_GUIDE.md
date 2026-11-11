@@ -339,3 +339,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Added the user's supplied pink wall photograph as `public/assets/images/socials-pink-wall.webp`, optimized from 2048×1365 to 1280×853 WebP.
 - Updated only the `.socials-body` background image reference and its subtle readability overlay. The photo fills the entire Socials page with `background-size: cover`.
 - Kept the existing minimalist platform cards, names, links, card layout and bottom navigation unchanged.
+
+
+### 2026-11-11 — Restyle Socials cards and bottom navigation for the pink wallpaper
+- Changed only Socials-scoped selectors in `public/assets/css/style.css`.
+- Platform link cards now use pale rose translucent glass, white-pink borders, a restrained plum shadow, and deep plum labels for contrast against the supplied pink wall photograph.
+- Removed the thin multicolor card edge accent on Socials; added a brighter glass hover state and matching keyboard focus outline.
+- Restyled only `.socials-body .bottom-nav` and its `.nav-link` states with soft pink glass and a deep rose active pill.
+- No shared/global navigation styles, Home, WTBF or Fortnite profile styles, page content, or link destinations were changed.

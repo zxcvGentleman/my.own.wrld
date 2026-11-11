@@ -338,3 +338,37 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(max-width:950px){.socials-links-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.socials-link-card:last-child{grid-column:1/-1}}
 @media(max-width:650px){.socials-body{background-attachment:scroll}.socials-page{padding-top:54px;padding-bottom:112px}.socials-header{margin-bottom:30px}.socials-header h1{font-size:clamp(56px,15vw,78px)}.socials-intro{font-size:14px}.socials-content{padding:15px;border-radius:18px}.socials-links-grid{grid-template-columns:1fr;gap:9px}.socials-link-card,.socials-link-card:last-child{grid-column:auto;min-height:82px;padding:12px}.socials-link-copy strong{font-size:13px}.socials-link-copy small{font-size:10px}.socials-about{align-items:flex-start;flex-direction:column;gap:8px;padding:16px 18px}}
 @media(prefers-reduced-motion:reduce){.socials-link-card,}
+
+
+/* Socials-only controls: soft rose glass to complement the pink wall */
+.socials-body .socials-link-card{
+  border:1px solid rgba(255,255,255,.62);
+  border-radius:17px;
+  background:linear-gradient(145deg,rgba(255,246,250,.72),rgba(244,205,222,.58));
+  box-shadow:0 12px 30px rgba(91,35,61,.13),inset 0 1px rgba(255,255,255,.8);
+  backdrop-filter:blur(17px) saturate(125%);
+  -webkit-backdrop-filter:blur(17px) saturate(125%);
+}
+.socials-body .socials-link-card:before{display:none}
+.socials-body .socials-link-card strong{color:#53243b}
+.socials-body .socials-link-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,255,255,.9);
+  background:linear-gradient(145deg,rgba(255,250,252,.86),rgba(249,220,233,.76));
+  box-shadow:0 16px 34px rgba(91,35,61,.19),inset 0 1px rgba(255,255,255,.95);
+}
+.socials-body .socials-link-card:focus-visible{outline:2px solid #7c3154;outline-offset:4px}
+.socials-body .bottom-nav{
+  border-color:rgba(255,255,255,.72);
+  background:rgba(250,224,237,.78);
+  box-shadow:0 12px 34px rgba(91,35,61,.2),inset 0 1px rgba(255,255,255,.88);
+  -webkit-backdrop-filter:blur(22px) saturate(145%);
+  backdrop-filter:blur(22px) saturate(145%);
+}
+.socials-body .nav-link{color:rgba(83,36,59,.78)}
+.socials-body .nav-link:hover{color:#53243b;background:rgba(255,255,255,.42)}
+.socials-body .nav-link.active{color:#fff;background:linear-gradient(125deg,#9f466e,#71304f);box-shadow:0 3px 12px rgba(113,48,79,.24)}
+.socials-body .nav-link:focus-visible{outline:2px solid #71304f;outline-offset:3px}
+@media(max-width:650px){
+  .socials-body .socials-link-card{min-height:76px;padding:16px 18px}
+}
