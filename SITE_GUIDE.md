@@ -246,3 +246,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the text-based Fortnite Tracker button from the hero header.
 - Added a compact image-only link using the Tracker Network logo asset (`https://fortnitetracker.com/Images/General/logo.png`) beside `COMPETITIVE MINDSET` in the About footer. It opens the user's confirmed Fortnite Tracker profile in a new tab.
 - Removed the decorative crown from the About footer and adjusted the profile heading to use the now-uncluttered player name.
+
+
+### 2026-11-11 — Use user-supplied Fortnite Tracker logo
+- Added the user's uploaded square Fortnite Tracker logo as `public/assets/images/fortnite-tracker-logo.webp` (optimized WebP, original 447×447 source).
+- Replaced the previous externally hosted logo image in the About footer with the new local asset.
+- Enlarged the image-only Tracker button so the complete supplied square logo is clearly visible; the image remains a link to the player's Fortnite Tracker profile.
