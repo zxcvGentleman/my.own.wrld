@@ -110,6 +110,12 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Socials heading cleanup
 - Removed the decorative period after `Socials` in the `public/socials.html` page heading.
 
+### 2026-11-11 — WTBF brand landing page
+- Removed the clothing-brand eyebrow, descriptive paragraph, and preparation copy from `public/wtbf.html`.
+- Rebuilt WTBF as a full-screen colorful brand splash page with a large gradient wordmark and the concise first-drop date (May 2027).
+- Added page-scoped `.wtbf-*` styles in `public/assets/css/style.css`, including layered gradient lighting, subtle orbit rings, responsive sizing, and a matching translucent navigation surface.
+- Left the future official-brand-site destination unlinked until its URL is available.
+
 ### 2026-11-11 — Fortnite profile focus
 - Removed the `PERSONAL PROFILE` eyebrow and the Development card from `public/profile.html`.
 - Expanded the Fortnite section with the user-shared background: started in Season 21, nearly 4,000 hours played, and the goal of competing in Fortnite esports.
