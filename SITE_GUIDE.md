@@ -77,6 +77,7 @@ No shared JavaScript is currently required. All website copy is English.
 - The About page is deleted and must not be reintroduced unless requested.
 - Keep the interface restrained; avoid unnecessary decoration and filler copy.
 - Social links use polished cards and clear outbound indicators.
+- Social cards use a balanced three-column desktop grid, a centered final card in the two-column tablet layout, and a single-column mobile layout.
 - Preserve responsive behavior and reduced-motion support.
 
 ## Change log
@@ -102,6 +103,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the footer, including the `zxcvGentleman.` wordmark and copyright/year text.
 - Updated page minimum heights to use the full viewport; bottom navigation remains.
 - Removed the now-unused footer-year JavaScript file and script references.
+
+### 2026-11-11 — Social button layout refinement
+- Reorganized the Socials cards into a balanced three-column desktop grid.
+- Centered the fifth card on the two-column tablet layout and kept a clean single-column mobile layout.
+- Standardized card height and spacing, and refined the outbound-arrow hover and keyboard-focus states.
 
 ### 2026-11-11 — English-only update
 - Translated all website interface copy and metadata into English.
