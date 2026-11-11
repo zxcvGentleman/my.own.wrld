@@ -308,3 +308,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Preserved all five original destinations and descriptive copy: Twitch, Fortnite Telegram, WTBF Telegram, AIR developers and TikTok. Each link now has a compact monogram tile, clear title/description, and external-link affordance.
 - Added page-scoped `.socials-*` styles in `public/assets/css/style.css`: dark temporary backdrop (awaiting the user's custom image), red-tinted translucent panels, border/shadow system aligned to the Fortnite dashboard, two-column links grid on desktop and stacked mobile layout. The bottom navigation active state now uses a matching red accent on Socials.
 - No other page layouts or link destinations changed. The custom background image will be connected after the user provides it.
+
+
+### 2026-11-11 — Apply the supplied abstract gradient background to Socials
+- Added the user's supplied 1920×1080 blue/purple/cyan/pink abstract artwork, optimized as a 1280×720 WebP at `public/assets/images/socials-background.webp`.
+- Reworked `public/socials.html` into a standalone Socials design rather than a copy of the Fortnite profile: centered title and short intro, a three-column desktop grid of five social links, and a concise About strip below. All five original link destinations and descriptions are preserved.
+- Replaced the previous red glass palette with translucent indigo panels, subtle cool-toned borders and restrained cyan/lilac/pink accents that complement the supplied background. Background covers the page; mobile layout stacks the cards into one column.
+- Bottom navigation remains shared and its active Socials state is recolored to match the background. No other page markup or global design tokens changed.
