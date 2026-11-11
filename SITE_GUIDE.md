@@ -322,3 +322,8 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the decorative “Stay connected” eyebrow, introductory sentence, “My platforms” label, link count, per-card explanatory copy/handles, and the About panel.
 - Preserved the supplied full-page abstract gradient background, platform monograms, outgoing link URLs, card styling and bottom navigation.
 - The cards now use a cleaner, more spacious single-line label layout.
+
+
+### 2026-11-11 — Remove the period from the Socials heading
+- Changed the Socials page title from `Socials.` to `Socials` in `public/socials.html`.
+- No other layout, copy, links, or styling changed.
