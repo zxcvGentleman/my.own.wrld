@@ -251,42 +251,43 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(max-width:650px){.player-screen{padding:35px var(--gutter) 112px}.player-topline{align-items:flex-start;flex-direction:column}.player-layout{grid-template-columns:1fr;gap:30px}.player-card-frame{min-height:390px;max-width:420px;margin-inline:auto;width:100%}.player-identity-note{justify-content:center}.player-heading{align-items:flex-start}.player-heading h1{font-size:clamp(48px,13vw,72px)}.player-season-stamp{flex-basis:72px;width:72px;height:88px}.player-season-stamp strong{font-size:35px}.player-stat-grid{grid-template-columns:1fr 1fr}.player-stat-hours{grid-column:1/-1}.player-stat{min-height:118px}.player-bottomline{flex-direction:column}}
 @media(max-width:370px){.player-stat-grid{grid-template-columns:1fr}.player-stat-hours{grid-column:auto}}
 
-/* Simplified Fortnite player profile */
-.fn-profile-body{background:#0b1226!important;color:#fff}
-.fn-profile{min-height:100svh;background:#0b1226}
-.fn-hero{position:relative;isolation:isolate;min-height:min(76svh,760px);display:flex;align-items:flex-end;overflow:hidden;padding:clamp(36px,7vw,88px) var(--gutter) 110px}
+/* Fortnite Pizza Party profile theme */
+.fn-profile-body{background:#ed3d2d!important;color:#fff}
+.fn-profile{min-height:100svh;background:linear-gradient(180deg,#f34a32 0%,#d92b25 100%);overflow:hidden}
+.fn-hero{position:relative;isolation:isolate;min-height:min(78svh,790px);display:flex;align-items:flex-end;overflow:hidden;padding:clamp(36px,7vw,88px) var(--gutter) 112px}
 .fn-hero-art,.fn-hero-vignette{position:absolute;inset:0}
-.fn-hero-art{z-index:-2;background:url("https://d1iv7db44yhgxn.cloudfront.net/documentation/images/90ac6e07-e14f-4015-b15f-0c4e5cb616c3/39-10_socialimage.png") center center/cover no-repeat;transform:scale(1.015)}
-.fn-hero-vignette{z-index:-1;background:linear-gradient(90deg,rgba(5,10,26,.84),rgba(5,10,26,.18) 78%),linear-gradient(0deg,rgba(5,10,26,.88),transparent 72%)}
+.fn-hero-art{z-index:-2;background:url("../images/fortnite-battle-bus.jpg") center center/cover no-repeat;transform:scale(1.005)}
+.fn-hero-vignette{z-index:-1;background:linear-gradient(90deg,rgba(112,20,16,.34),rgba(112,20,16,.02) 72%),linear-gradient(0deg,rgba(107,17,15,.7),transparent 58%)}
 .fn-hero-content{width:100%;max-width:1200px;margin:0 auto}
-.fn-eyebrow{margin:0 0 16px;color:#7ddcff;font-size:10px;font-weight:800;letter-spacing:.2em}
-.fn-hero h1{max-width:1000px;margin:0;color:#fff;font-size:clamp(54px,10vw,132px);line-height:.9;font-weight:950;letter-spacing:-.085em;text-transform:none;text-shadow:0 5px 32px rgba(0,0,0,.4);overflow-wrap:anywhere}
-.fn-hero-meta{margin:24px 0 0;color:rgba(255,255,255,.92);font-size:14px;font-weight:750;letter-spacing:.12em}
-.fn-hero-meta span{padding:0 9px;color:#f4d94a}
-.fn-details{max-width:1200px;margin:0 auto;padding:48px var(--gutter) 130px}
-.fn-details-heading{display:flex;justify-content:space-between;gap:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.16);color:#79d9ff;font-size:11px;font-weight:800;letter-spacing:.15em}
-.fn-tracker-link{color:#f4d94a;font-size:11px;font-weight:800;letter-spacing:.1em;text-decoration:none;transition:opacity .2s ease}.fn-tracker-link:hover{opacity:.72}
-.fn-details-heading span:last-child{color:#8290ad}
-.fn-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid rgba(255,255,255,.16)}
-.fn-stat{min-height:132px;padding:24px 22px 22px 0;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
-.fn-stat+.fn-stat{padding-left:24px;border-left:1px solid rgba(255,255,255,.13)}
-.fn-stat strong{color:#fff;font-size:clamp(28px,4vw,46px);font-weight:900;letter-spacing:-.06em}
-.fn-stat span,.fn-about>span{color:#a8b7d3;font-size:11px;font-weight:800;letter-spacing:.13em}
-.fn-about{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;padding-top:28px}
-.fn-about>span{padding-top:5px;color:#79d9ff}
-.fn-about p{max-width:760px;margin:0;color:#e0e7f4;font-size:17px;line-height:1.75}
-.fn-profile-body .bottom-nav{background:rgba(12,19,43,.84)!important;border-color:rgba(255,255,255,.18)!important}
-.fn-profile-body .nav-link.active{background:#f1d94b!important;color:#18203a!important}
+.fn-hero h1{max-width:1000px;margin:0;color:#fff;font-size:clamp(54px,10vw,132px);line-height:.88;font-weight:950;letter-spacing:-.085em;text-shadow:0 5px 30px rgba(103,18,12,.35);overflow-wrap:anywhere}
+.fn-details{position:relative;max-width:1200px;margin:-1px auto 0;padding:34px var(--gutter) 142px}
+.fn-details:before{content:"";position:absolute;z-index:0;inset:0 0 0;background:linear-gradient(145deg,#fff0d6,#ffe3b5 58%,#ffd18f);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.fn-details>*{position:relative;z-index:1}
+.fn-details-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 0 18px;border-bottom:1px solid rgba(135,44,25,.2);color:#a62d20;font-size:11px;font-weight:950;letter-spacing:.16em}
+.fn-tracker-link{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;background:#e83e2e;border:1px solid #c72d22;border-radius:5px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.1em;text-decoration:none;box-shadow:0 4px 0 #a9251d;transition:transform .18s ease,box-shadow .18s ease}
+.fn-tracker-link:hover{transform:translateY(-2px);box-shadow:0 6px 0 #a9251d}
+.fn-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:22px 0 26px}
+.fn-stat{position:relative;min-height:142px;padding:19px 20px 18px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;overflow:hidden;background:rgba(255,255,255,.78);border:1px solid rgba(169,66,35,.18);border-radius:8px;box-shadow:0 8px 20px rgba(135,44,25,.08)}
+.fn-stat:after{content:"";position:absolute;width:92px;height:92px;right:-28px;bottom:-36px;border:12px solid rgba(255,91,59,.12);border-radius:50%}
+.fn-stat strong{color:#d83227;font-size:clamp(32px,4vw,48px);font-weight:950;letter-spacing:-.07em;line-height:1}
+.fn-stat span,.fn-about>span{color:#98503a;font-size:10px;font-weight:900;letter-spacing:.14em}
+.fn-about{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;padding:22px 24px 24px;background:#fff8e9;border:1px solid rgba(169,66,35,.17);border-left:5px solid #ef4a35;border-radius:7px;box-shadow:0 8px 20px rgba(135,44,25,.07)}
+.fn-about>span{padding-top:5px;color:#d83b2c}
+.fn-about p{max-width:760px;margin:0;color:#633b30;font-size:16px;line-height:1.75}
+.fn-profile-body .bottom-nav{background:rgba(116,25,22,.78)!important;border-color:rgba(255,235,205,.3)!important;box-shadow:0 8px 30px rgba(91,20,18,.25)!important;backdrop-filter:blur(18px)}
+.fn-profile-body .nav-link{color:#ffe9d1}
+.fn-profile-body .nav-link.active{background:#ffd34f!important;color:#6d241b!important}
 @media(max-width:650px){
- .fn-hero{min-height:70svh;padding:30px var(--gutter) 100px}
- .fn-hero-art{background-position:58% center}
- .fn-hero-vignette{background:linear-gradient(90deg,rgba(5,10,26,.7),rgba(5,10,26,.12)),linear-gradient(0deg,rgba(5,10,26,.9),transparent 75%)}
- .fn-hero h1{font-size:clamp(48px,12vw,76px)}
- .fn-hero-meta{font-size:12px;letter-spacing:.08em}
- .fn-details{padding-top:34px}
- .fn-stats{grid-template-columns:1fr}
- .fn-stat{min-height:88px;padding:16px 0;flex-direction:row;align-items:center}
- .fn-stat+.fn-stat{padding-left:0;border-left:0;border-top:1px solid rgba(255,255,255,.1)}
- .fn-stat strong{font-size:32px}
- .fn-about{grid-template-columns:1fr;gap:12px}
+ .fn-hero{min-height:68svh;padding:30px var(--gutter) 94px}
+ .fn-hero-art{background-position:center center}
+ .fn-hero-vignette{background:linear-gradient(90deg,rgba(112,20,16,.2),transparent),linear-gradient(0deg,rgba(107,17,15,.72),transparent 65%)}
+ .fn-hero h1{font-size:clamp(46px,12vw,76px)}
+ .fn-details{padding-top:27px}
+ .fn-details-heading{align-items:flex-start}
+ .fn-tracker-link{padding:9px 10px;font-size:9px}
+ .fn-stats{grid-template-columns:1fr;gap:10px;padding:16px 0 20px}
+ .fn-stat{min-height:92px;padding:15px 17px;flex-direction:row;align-items:center}
+ .fn-stat strong{font-size:34px}
+ .fn-about{grid-template-columns:1fr;gap:10px;padding:18px}
+ .fn-about p{font-size:14px}
 }
