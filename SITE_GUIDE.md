@@ -327,3 +327,9 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Remove the period from the Socials heading
 - Changed the Socials page title from `Socials.` to `Socials` in `public/socials.html`.
 - No other layout, copy, links, or styling changed.
+
+
+### 2026-11-11 — Remove icon tiles and arrow circles from Socials cards
+- Removed the monogram-letter rounded squares and circular arrow decorations from all five cards in `public/socials.html`.
+- Simplified `.socials-link-card` to text-only cards with consistent left alignment and adjusted padding/height so the layout remains balanced without the icons.
+- Removed obsolete icon and arrow styles and updated reduced-motion/mobile rules. Background, card colors, links, heading and navigation remain unchanged.
