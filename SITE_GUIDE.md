@@ -64,7 +64,8 @@ No shared JavaScript is currently required. All website copy is English.
 - Twitch: `https://www.twitch.tv/zxcvgentleman`
 - Telegram: `https://t.me/zxcvGentlemanTG`
 - WTBF Telegram: `https://t.me/wtbf_official`
-- GitHub: `https://github.com/zxcvGentleman`
+- AIR developers: `https://t.me/AIRdevelopers`
+- Main TikTok: `https://www.tiktok.com/@my.own.wrld4me`
 
 ## Design decisions and constraints
 
@@ -87,6 +88,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Redesigned social links as responsive cards.
 - Kept the bottom-centered translucent rounded navigation.
 - Added this project guide to track architecture and future changes.
+
+### 2026-11-11 — Social links update
+- Removed the `MY LINKS` eyebrow and GitHub card from the Socials page.
+- Added short destination descriptions to every social card.
+- Added AIR developers Telegram and the main TikTok account (`@my.own.wrld4me`).
 
 ### 2026-11-11 — Header and footer removal
 - Removed the top header and its `zxcvGentleman.` wordmark from all pages.
