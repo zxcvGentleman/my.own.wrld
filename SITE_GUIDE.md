@@ -17,13 +17,12 @@ The About page has been deleted. It is no longer part of the site or navigation.
 
 Shared resources:
 - `public/assets/css/style.css` — Global layout, typography, colors, cards, responsive behavior, and bottom navigation.
-- `public/assets/js/main.js` — Dynamic footer year.
 - `.github/workflows/deploy.yml` — Deploys `public/` on pushes to `main`.
 - `README.md` — Project overview.
 
 ## Navigation
 
-The same fixed bottom navigation appears on every page:
+The only persistent site chrome is the fixed bottom navigation; there is no top header or footer. The same navigation appears on every page:
 1. Home → `index.html`
 2. WTBF → `wtbf.html`
 3. zxcvGentleman → `profile.html`
@@ -49,21 +48,16 @@ Defined in `:root` in `public/assets/css/style.css`:
 | `--font` | system/Inter stack | Site typography |
 
 Important CSS classes:
-- `.site-header`, `.logo` — Shared header and wordmark.
 - `.page`, `.page-inner`, `.eyebrow`, `.lead` — Page layout and text.
 - `.home-page`, `.home-copy`, `.text-link` — Home page.
 - `.split-bottom`, `.meta` — WTBF information row.
 - `.profile-grid`, `.profile-card` — Profile cards.
 - `.social-grid`, `.social-card`, `.social-name`, `.social-handle`, `.social-arrow` — Social links.
-- `.site-footer` — Shared footer.
 - `.bottom-nav`, `.nav-link`, `.nav-link.active` — Fixed navigation.
 
 ## JavaScript
 
-File: `public/assets/js/main.js`
-
-- `year` — Footer year element selected with `[data-current-year]`; displays the current year.
-- No client-side language switching is used. All website copy is English.
+No shared JavaScript is currently required. All website copy is English.
 
 ## Social destinations
 
@@ -93,6 +87,12 @@ File: `public/assets/js/main.js`
 - Redesigned social links as responsive cards.
 - Kept the bottom-centered translucent rounded navigation.
 - Added this project guide to track architecture and future changes.
+
+### 2026-11-11 — Header and footer removal
+- Removed the top header and its `zxcvGentleman.` wordmark from all pages.
+- Removed the footer, including the `zxcvGentleman.` wordmark and copyright/year text.
+- Updated page minimum heights to use the full viewport; bottom navigation remains.
+- Removed the now-unused footer-year JavaScript file and script references.
 
 ### 2026-11-11 — English-only update
 - Translated all website interface copy and metadata into English.
