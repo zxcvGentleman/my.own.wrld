@@ -10,7 +10,7 @@ GitHub Pages publishes the `public/` directory (configured in `.github/workflows
 |---|---|---|
 | Home | `public/index.html` | Landing page |
 | WTBF | `public/wtbf.html` | Clothing brand |
-| zxcvGentleman | `public/profile.html` | Personal profile and interests |
+| zxcvGentleman | `public/profile.html` | Fortnite player profile |
 | Socials | `public/socials.html` | Social media links |
 
 The About page has been deleted. It is no longer part of the site or navigation.
@@ -51,7 +51,7 @@ Important CSS classes:
 - `.page`, `.page-inner`, `.eyebrow`, `.lead` — Page layout and text.
 - `.home-page`, `.home-copy`, `.text-link` — Home page.
 - `.split-bottom`, `.meta` — WTBF information row.
-- `.profile-grid`, `.profile-card` — Profile cards.
+- `.profile-grid`, `.profile-card` — Single-column Fortnite profile card.
 - `.social-grid`, `.social-card`, `.social-name`, `.social-handle` — Social links.
 - `.bottom-nav`, `.nav-link`, `.nav-link.active` — Fixed navigation.
 
@@ -103,6 +103,11 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the footer, including the `zxcvGentleman.` wordmark and copyright/year text.
 - Updated page minimum heights to use the full viewport; bottom navigation remains.
 - Removed the now-unused footer-year JavaScript file and script references.
+
+### 2026-11-11 — Fortnite profile focus
+- Removed the `PERSONAL PROFILE` eyebrow and the Development card from `public/profile.html`.
+- Expanded the Fortnite section with the user-shared background: started in Season 21, nearly 4,000 hours played, and the goal of competing in Fortnite esports.
+- Changed the profile layout to one wider, single-column card.
 
 ### 2026-11-11 — Social button layout refinement
 - Reorganized the Socials cards into a balanced three-column desktop grid.
