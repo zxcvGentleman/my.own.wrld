@@ -12,7 +12,7 @@ GitHub Pages publishes only the `public/` directory (configured in `.github/work
 | WTBF | `public/wtbf.html` | Clothing brand |
 | zxcvGentleman | `public/profile.html` | Personal profile and interests |
 | Socials | `public/socials.html` | Social profile links |
-| About | `public/about.html` | Content intentionally cleared; waiting for user-provided text |
+| About | `public/about.html` | Completely blank main content; waiting for user-provided text |
 
 Shared resources:
 - `public/assets/css/style.css` — global layout, typography, colors, cards, responsive behavior, bottom navigation.
@@ -83,7 +83,7 @@ To make text bilingual, add both `data-ua` and `data-en` attributes to the eleme
 - Accent: white, not green.
 - Navigation: bottom-centered floating glass panel, rounded, width determined by its content.
 - Every navigation destination is a separate HTML document.
-- About page must remain empty apart from its page title until the user supplies copy.
+- About page main content must remain completely empty until the user supplies copy.
 - Keep the interface restrained: avoid unnecessary decoration, ornaments, and filler copy.
 - Social links should use polished cards and clear outbound indicators.
 - Keep responsive behavior and reduced-motion support.
