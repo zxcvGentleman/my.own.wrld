@@ -62,7 +62,7 @@ No shared JavaScript is currently required. All website copy is English.
 ## Social destinations
 
 - Twitch: `https://www.twitch.tv/zxcvgentleman`
-- Telegram: `https://t.me/zxcvGentlemanTG`
+- Fortnite Telegram: `https://t.me/zxcvGentlemanTG`
 - WTBF Telegram: `https://t.me/wtbf_official`
 - AIR developers: `https://t.me/AIRdevelopers`
 - Main TikTok: `https://www.tiktok.com/@my.own.wrld4me`
@@ -88,6 +88,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Redesigned social links as responsive cards.
 - Kept the bottom-centered translucent rounded navigation.
 - Added this project guide to track architecture and future changes.
+
+### 2026-11-11 — Fortnite Telegram clarification
+- Renamed the personal Telegram card to Fortnite Telegram and clarified that it is dedicated to Fortnite.
 
 ### 2026-11-11 — Social links update
 - Removed the `MY LINKS` eyebrow and GitHub card from the Socials page.
