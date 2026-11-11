@@ -294,3 +294,10 @@ No shared JavaScript is currently required. All website copy is English.
 - New page structure: compact identity/status top bar; two-column hero with headline, introduction and link to the profile; abstract orbit illustration card; three clickable discovery tiles for WTBF, Fortnite profile and Socials; dedicated “This is only the beginning” panel explaining that many parts are in development and new sections, projects, features and details will be added in the future; compact closing metadata line.
 - Added page-scoped `.home-*` styles to `public/assets/css/style.css`. These include dark layered gradient background, subtle grid texture, glass surfaces, restrained hover/focus states, responsive card layouts and mobile stacking. Global tokens and non-Home page styles are unchanged.
 - Website copy remains English to match the site's existing language. All Home cards link to existing local pages; no new routes or JavaScript dependencies were introduced.
+
+
+### 2026-11-11 — Simplify Home to match the Socials page
+- Replaced the oversized, decorative Home design with the same page structure and shared styling used by `public/socials.html`: standard `.page` / `.page-inner`, shared heading and lead typography, and the existing `.social-grid` / `.social-card` components.
+- Home now has one straightforward title and introduction, three consistent navigation cards (WTBF, zxcvGentleman / Fortnite profile, Socials), and a simple `.split-bottom` message explaining that many sections, projects, features and details will be added in the future.
+- Removed the Home-only visual system, orbit illustration, status labels and custom decorative backgrounds by restoring `public/assets/css/style.css` to the complete pre-Home shared stylesheet. WTBF, Socials and Fortnite profile styles — including the cleaned Pizza Party background — are preserved.
+- Kept the existing bottom navigation and all existing page destinations. No JavaScript or new dependencies added.
