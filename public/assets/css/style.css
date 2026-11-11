@@ -416,3 +416,19 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
   -webkit-backdrop-filter:none;
 }
 .socials-body .socials-links-grid{background:transparent}
+
+
+/* Socials: remove the large wrapper panel behind the links */
+.socials-body .socials-shell,
+.socials-body .socials-content,
+.socials-body .socials-links-grid {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.socials-body .socials-content {
+  padding: 0 !important;
+}
