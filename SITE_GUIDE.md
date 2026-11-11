@@ -155,3 +155,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Rebuilt the lower profile as colorful game-style stat cards, an about-player panel, and a dedicated Fortnite esports goal panel.
 - Added responsive `.fn-*` styles in `public/assets/css/style.css`, using bold yellow/cyan accents, angular clipped panels, saturated blue/purple gradients, and mobile-specific layout changes.
 - The hero uses Epic Games Store image asset hosted on Epic's CDN; all personal stats and claims remain limited to user-provided details.
+
+
+### 2026-11-11 — Fortnite profile simplification
+- Removed the decorative HUD labels, oversized season badge, ornamental stat-card graphics, separate esports feature card, and extra footer copy from `public/profile.html`.
+- Kept the Fortnite key-art hero, player name, concise playtime/season facts, and one short About section.
+- Replaced the final `.fn-*` profile style block in `public/assets/css/style.css` with a restrained layout: clean typography, a simple three-column stats row, subtle dividers, and a compact mobile stack.
+- Preserved the shared bottom navigation and English-only copy.
