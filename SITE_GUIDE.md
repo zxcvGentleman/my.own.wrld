@@ -141,3 +141,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Removed the language switcher and bilingual JavaScript behavior.
 - Removed the About page from the project and bottom navigation.
 - Updated README and this guide to reflect the four-page English-only site.
+
+
+### 2026-11-11 — Fortnite player dashboard redesign
+- Replaced the text-first profile composition in public/profile.html with a visual player dashboard: custom ZG emblem/player card, Season 21 badge, playtime and competitive-focus stat panels, player overview, and esports objective strip.
+- Added responsive dashboard styling in public/assets/css/style.css: card geometry, emblem rings, HUD labels, stat visualizations, atmospheric lighting, background orbs, and mobile stacking.
+- Kept all player claims grounded in supplied facts; decorative bars and shapes are visual styling, not additional gameplay statistics.
+- Preserved the shared bottom navigation and English-only interface.
