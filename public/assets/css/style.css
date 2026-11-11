@@ -432,3 +432,37 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 .socials-body .socials-content {
   padding: 0 !important;
 }
+
+
+/* Socials: minimal black background with solid white link buttons */
+.socials-body {
+  background: #000 !important;
+  background-image: none !important;
+  background-attachment: scroll !important;
+  color: #fff !important;
+}
+.socials-body .socials-link-card,
+.socials-body .socials-link-card:hover {
+  min-height: 76px;
+  padding: 18px 22px;
+  border: 1px solid #fff !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  transform: none;
+}
+.socials-body .socials-link-card strong {
+  color: #000 !important;
+}
+.socials-body .socials-link-card small {
+  color: #333 !important;
+}
+.socials-body .socials-link-card:before {
+  display: none !important;
+}
+.socials-body .socials-link-card:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
