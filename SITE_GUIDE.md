@@ -274,3 +274,9 @@ No shared JavaScript is currently required. All website copy is English.
 - The cleaned full-bleed background is stored as 1024×576 WebP at `public/assets/images/fortnite-pizza-clean-natural.webp` during the Pages build. Its Base64 source chunks are kept in `.github/assets/fortnite-pizza-clean-natural/` and concatenated by `.github/workflows/deploy.yml` before upload.
 - Updated `public/assets/css/style.css` to use the natural, cleaned image as the sole Pizza Party page background and removed the old CSS cleanup overlay. Removed its obsolete HTML element from `public/profile.html`.
 - The separate original transparent Fortnite wordmark at the top, username, stats/About cards, Tracker image button and bottom navigation remain unchanged.
+
+
+### 2026-11-11 — Restore profile background after invalid generated image
+- The previous background-rebuild step assembled a corrupt WebP file from incorrectly sized Base64 chunks. Removed that build step so deployment no longer produces or references the invalid file.
+- Restored the profile background CSS to the prior image source so the page can display its backdrop again.
+- The separate Fortnite wordmark and all profile layout elements are unchanged. A clean, directly stored background asset remains to be uploaded in a later correction.
