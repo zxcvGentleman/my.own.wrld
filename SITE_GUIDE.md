@@ -231,3 +231,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Automatic stats integration remains a separate potential feature. Fortnite Tracker has no publicly available Fortnite API and prohibits scraping; a separate Fortnite stats provider documents Battle Royale stats endpoints requiring an API key. Any future integration should keep its key server-side (for example, in repository secrets) and clearly distinguish supported BR stats from ranked/event/tournament data.
 
 - CSS verification: kept the hero/background image enabled by declaring the body base as `background-color` rather than a shorthand `background` that would reset the image layer.
+
+
+### 2026-11-11 — Remove decorative profile tabs and avatar
+- Removed the non-functional Overview / About / Tracker pill navigation from `public/profile.html`; the main site bottom navigation remains unchanged.
+- Removed the `PLAYER PROFILE` kicker and circular Z avatar from the profile identity block.
+- Kept the player's name and the real external Fortnite Tracker button.
+- Updated responsive profile header grid rules in `public/assets/css/style.css` to fit the simplified identity row.
