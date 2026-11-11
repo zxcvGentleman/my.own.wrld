@@ -104,6 +104,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Updated page minimum heights to use the full viewport; bottom navigation remains.
 - Removed the now-unused footer-year JavaScript file and script references.
 
+### 2026-11-11 — Profile heading cleanup
+- Removed the decorative period after `zxcvGentleman` in the profile page heading.
+
 ### 2026-11-11 — Fortnite profile focus
 - Removed the `PERSONAL PROFILE` eyebrow and the Development card from `public/profile.html`.
 - Expanded the Fortnite section with the user-shared background: started in Season 21, nearly 4,000 hours played, and the goal of competing in Fortnite esports.
