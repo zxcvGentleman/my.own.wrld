@@ -175,3 +175,9 @@ No shared JavaScript is currently required. All website copy is English.
 ### 2026-11-11 — Profile hero subtitle removal
 - Removed only the `PLAYING SINCE SEASON 21 · ~4,000 HOURS` line directly beneath the `zxcvGentleman` hero heading in `public/profile.html`.
 - Kept the Season 21 and playtime statistics in the lower Player Profile section unchanged.
+
+
+### 2026-11-11 — Profile section counter removal
+- Removed the `01 — 03` decorative counter from the `PLAYER PROFILE` heading in `public/profile.html`.
+- The uploaded replacement hero image is available in the conversation, but is not yet in the repository; the current GitHub integration exposes text/blob operations but no direct binary upload action. Keep the existing hero image until the uploaded asset can be committed.
+- Fortnite Tracker stats were not imported because a matching player profile for `zxcvGentleman` could not be verified. Do not invent stats; request the exact Epic display name or the direct Fortnite Tracker profile URL.
