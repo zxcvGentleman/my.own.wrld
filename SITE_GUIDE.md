@@ -69,6 +69,8 @@ No shared JavaScript is currently required. All website copy is English.
 
 ## Design decisions and constraints
 
+- Text selection is disabled globally through `user-select: none` and `-webkit-user-select: none` on the universal selector in `public/assets/css/style.css`.
+
 - Visual direction: dark, minimal, nearly full viewport width with modest edge spacing.
 - Accent: white, not green.
 - Navigation: bottom-centered floating glass panel, rounded, width determined by its content.
@@ -109,6 +111,9 @@ No shared JavaScript is currently required. All website copy is English.
 
 ### 2026-11-11 — Socials heading cleanup
 - Removed the decorative period after `Socials` in the `public/socials.html` page heading.
+
+### 2026-11-11 — Global text selection disabled
+- Disabled text highlighting/selection across all site elements with `user-select: none` and the WebKit-prefixed equivalent in the global universal CSS rule.
 
 ### 2026-11-11 — WTBF brand landing page
 - Removed the clothing-brand eyebrow, descriptive paragraph, and preparation copy from `public/wtbf.html`.
