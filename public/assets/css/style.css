@@ -372,3 +372,36 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 @media(max-width:650px){
   .socials-body .socials-link-card{min-height:76px;padding:16px 18px}
 }
+
+
+/* Socials link buttons: keep only text over the wallpaper, no card backdrop */
+.socials-body .socials-link-card{
+  min-height:76px;
+  padding:18px 4px;
+  border:0;
+  border-bottom:1px solid rgba(108,43,75,.26);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  transform:none;
+}
+.socials-body .socials-link-card:hover{
+  border-color:rgba(108,43,75,.5);
+  background:transparent;
+  box-shadow:none;
+  transform:none;
+}
+.socials-body .socials-link-card strong{color:#55243d}
+.socials-body .socials-link-card:focus-visible{
+  outline:2px solid #71304f;
+  outline-offset:3px;
+}
+@media(max-width:650px){
+  .socials-body .socials-link-card,
+  .socials-body .socials-link-card:last-child{
+    min-height:64px;
+    padding:15px 3px;
+  }
+}

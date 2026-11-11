@@ -353,3 +353,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Socials-only rose-glass control styling is in the preceding commit.
 - The first Pages deployment attempt could not retrieve its uploaded artifact; retrying the same run produced a duplicate `github-pages` artifact. A fresh push run is used for the clean deployment rather than reusing that run's artifact history.
 - No additional visual changes in this entry.
+
+
+### 2026-11-11 — Remove the card backgrounds from Socials links
+- Kept the supplied pink wall image as the Socials page background.
+- Removed the filled rose-glass rectangles, rounded card borders, blur and shadows from each platform link. The links are now text-only clickable rows with a subtle divider and a restrained hover/focus treatment.
+- Left the bottom navigation and its pink-glass styling unchanged. No other page selectors were changed.
