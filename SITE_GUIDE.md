@@ -252,3 +252,5 @@ No shared JavaScript is currently required. All website copy is English.
 - Added the user's uploaded square Fortnite Tracker logo as `public/assets/images/fortnite-tracker-logo.webp` (optimized WebP, original 447×447 source).
 - Replaced the previous externally hosted logo image in the About footer with the new local asset.
 - Enlarged the image-only Tracker button so the complete supplied square logo is clearly visible; the image remains a link to the player's Fortnite Tracker profile.
+
+- Final display sizing: the supplied square Tracker logo is displayed as a 72×72 image-only button with no extra letter/icon or button label; it is fully clickable and opens the user's profile.
