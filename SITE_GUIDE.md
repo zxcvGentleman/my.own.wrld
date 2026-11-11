@@ -229,3 +229,5 @@ No shared JavaScript is currently required. All website copy is English.
 - Preserved only the existing profile facts (started Season 21, approximately 4,000 hours, esports goal) and existing About copy; did not copy mockup-only rank, K/D, tournament, or win numbers.
 - Reworked `public/assets/css/style.css` profile section; no JavaScript required. Responsive layout stacks cards and About panel on smaller screens; site bottom navigation remains shared.
 - Automatic stats integration remains a separate potential feature. Fortnite Tracker has no publicly available Fortnite API and prohibits scraping; a separate Fortnite stats provider documents Battle Royale stats endpoints requiring an API key. Any future integration should keep its key server-side (for example, in repository secrets) and clearly distinguish supported BR stats from ranked/event/tournament data.
+
+- CSS verification: kept the hero/background image enabled by declaring the body base as `background-color` rather than a shorthand `background` that would reset the image layer.
