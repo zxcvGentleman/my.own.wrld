@@ -214,3 +214,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Fixed the profile hero image in `public/assets/css/style.css`: it had still been pointing to the old local `fortnite-battle-bus.jpg` asset, which is why the old Battle Bus image remained visible.
 - Updated `.fn-hero-art` to use the exact original Pizza Party JPEG hosted on Epic Developer Community's forum CDN: `https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/0/2/e02871e939e1c1192059c4980e8703bf0662b655.jpeg`.
 - Kept the current crop, overlay, and Pizza Party color theme unchanged.
+
+
+### 2026-11-11 — Animated pizza decorations
+- Added two decorative pizza slices to `public/profile.html`, positioned at the left and right sides of the profile statistics/About area and hidden from assistive technology.
+- Added CSS 3D-style perspective rotation, subtle vertical floating, depth shadows, staggered reverse motion, and reduced-motion support in `public/assets/css/style.css`.
+- Decorations are hidden on narrow mobile screens to avoid covering profile content; no JavaScript or external image dependency added.
