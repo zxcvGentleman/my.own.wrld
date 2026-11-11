@@ -359,3 +359,9 @@ No shared JavaScript is currently required. All website copy is English.
 - Kept the supplied pink wall image as the Socials page background.
 - Removed the filled rose-glass rectangles, rounded card borders, blur and shadows from each platform link. The links are now text-only clickable rows with a subtle divider and a restrained hover/focus treatment.
 - Left the bottom navigation and its pink-glass styling unchanged. No other page selectors were changed.
+
+
+### 2026-11-11 — Remove the large backdrop behind Socials link buttons
+- Identified the remaining visible background as the parent `.socials-content` panel behind the individual platform links, not the page wallpaper.
+- Removed that parent panel's fill, border, blur and shadow; explicitly kept the links grid transparent. Individual platform rows remain transparent from the previous change.
+- Preserved the pink wall background image on `.socials-body` and left the bottom navigation styles unchanged.
