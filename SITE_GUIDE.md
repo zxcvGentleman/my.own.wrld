@@ -315,3 +315,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Reworked `public/socials.html` into a standalone Socials design rather than a copy of the Fortnite profile: centered title and short intro, a three-column desktop grid of five social links, and a concise About strip below. All five original link destinations and descriptions are preserved.
 - Replaced the previous red glass palette with translucent indigo panels, subtle cool-toned borders and restrained cyan/lilac/pink accents that complement the supplied background. Background covers the page; mobile layout stacks the cards into one column.
 - Bottom navigation remains shared and its active Socials state is recolored to match the background. No other page markup or global design tokens changed.
+
+
+### 2026-11-11 — Remove extra text from Socials
+- Simplified `public/socials.html` to keep only the main `Socials.` heading and the five platform names.
+- Removed the decorative “Stay connected” eyebrow, introductory sentence, “My platforms” label, link count, per-card explanatory copy/handles, and the About panel.
+- Preserved the supplied full-page abstract gradient background, platform monograms, outgoing link URLs, card styling and bottom navigation.
+- The cards now use a cleaner, more spacious single-line label layout.
