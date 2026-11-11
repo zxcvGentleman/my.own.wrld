@@ -287,3 +287,10 @@ No shared JavaScript is currently required. All website copy is English.
 - Stored the WebP as five Base64 chunks under `.github/assets/fortnite-pizza-bg-clean/part-*.b64`; the Pages workflow reconstructs it into `public/assets/images/fortnite-pizza-clean-natural.webp` before upload.
 - Added build assertions for the exact 37,236-byte file size and the `WEBP` signature. This prevents publishing an incomplete or malformed image.
 - Updated `public/assets/css/style.css` to use the local reconstructed image as the full-page background. The independent original Fortnite wordmark remains a separate object above it. Removed all temporary CSS paint-over behavior; profile content, statistics, About panel, Tracker logo button and bottom navigation remain unchanged.
+
+
+### 2026-11-11 — Home page visual redesign and future-updates notice
+- Rebuilt `public/index.html` as a responsive editorial-style landing page; existing Home / WTBF / zxcvGentleman / Socials navigation remains intact.
+- New page structure: compact identity/status top bar; two-column hero with headline, introduction and link to the profile; abstract orbit illustration card; three clickable discovery tiles for WTBF, Fortnite profile and Socials; dedicated “This is only the beginning” panel explaining that many parts are in development and new sections, projects, features and details will be added in the future; compact closing metadata line.
+- Added page-scoped `.home-*` styles to `public/assets/css/style.css`. These include dark layered gradient background, subtle grid texture, glass surfaces, restrained hover/focus states, responsive card layouts and mobile stacking. Global tokens and non-Home page styles are unchanged.
+- Website copy remains English to match the site's existing language. All Home cards link to existing local pages; no new routes or JavaScript dependencies were introduced.
