@@ -256,7 +256,7 @@ h1,h2 { margin:0; font-size:clamp(52px,9vw,132px); line-height:.94; letter-spaci
 .fn-profile{min-height:100svh;background:#0b1226}
 .fn-hero{position:relative;isolation:isolate;min-height:min(76svh,760px);display:flex;align-items:flex-end;overflow:hidden;padding:clamp(36px,7vw,88px) var(--gutter) 110px}
 .fn-hero-art,.fn-hero-vignette{position:absolute;inset:0}
-.fn-hero-art{z-index:-2;background:url("../images/fortnite-battle-bus.jpg") center 35%/cover no-repeat;transform:scale(1.015)}
+.fn-hero-art{z-index:-2;background:url("https://d1iv7db44yhgxn.cloudfront.net/documentation/images/90ac6e07-e14f-4015-b15f-0c4e5cb616c3/39-10_socialimage.png") center center/cover no-repeat;transform:scale(1.015)}
 .fn-hero-vignette{z-index:-1;background:linear-gradient(90deg,rgba(5,10,26,.84),rgba(5,10,26,.18) 78%),linear-gradient(0deg,rgba(5,10,26,.88),transparent 72%)}
 .fn-hero-content{width:100%;max-width:1200px;margin:0 auto}
 .fn-eyebrow{margin:0 0 16px;color:#7ddcff;font-size:10px;font-weight:800;letter-spacing:.2em}
