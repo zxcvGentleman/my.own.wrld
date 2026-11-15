@@ -85,3 +85,23 @@ html[data-theme="light"] .wtbf-site-link{color:#111;border-color:#777}
 html[data-theme="light"] .wtbf-site-link:hover{background:#111;color:#fff}
 @media(max-width:750px){.locker-showcase{grid-template-columns:1fr}.locker-preview-stage{min-height:330px}#locker-preview-image{height:340px;max-width:400px}.locker-preview-meta{padding:22px 25px 28px}.locker-preview-meta h3{font-size:clamp(30px,8vw,48px);margin:14px 0 20px}.locker-arrows{margin-top:20px}.locker-choice-grid{gap:6px}.locker-choice{padding:9px;flex-direction:column;justify-content:center;text-align:center}.locker-choice img{width:55px;height:55px}.locker-choice span{font-size:10px}.settings-row{align-items:flex-start;flex-direction:column;gap:13px}.settings-segments{width:100%}.settings-segments button{flex:1}.settings-footer{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){#locker-preview-image.locker-pop{animation:none}}
+
+/* Locker 2.1 — larger full-body renders, fewer labels */
+.fn-locker{padding-top:18px}
+.locker-showcase{grid-template-columns:minmax(0,1.45fr) minmax(200px,.7fr);min-height:590px}
+.locker-preview-stage{min-height:590px;padding:10px 0 0;align-items:end}
+#locker-preview-image{width:100%;max-width:720px;height:590px;object-fit:contain;object-position:center bottom;image-rendering:auto}
+.locker-preview-meta{padding:clamp(20px,3vw,45px)}
+.locker-preview-meta h3{margin:0 0 27px;font-size:clamp(26px,3.7vw,50px)}
+#locker-preview-link{width:50px;height:50px;display:grid;place-items:center;gap:0;padding:0;font-size:27px;line-height:1;letter-spacing:0}
+.locker-choice{justify-content:center;padding:8px 16px}
+.locker-choice img{width:80px;height:80px;object-fit:contain}
+@media(max-width:760px){
+ .locker-showcase{grid-template-columns:1fr;min-height:auto}
+ .locker-preview-stage{min-height:clamp(370px,80vw,520px);padding-top:0}
+ #locker-preview-image{height:clamp(370px,80vw,520px);max-width:100%}
+ .locker-preview-meta{padding:22px;align-items:flex-start}
+ .locker-preview-meta h3{font-size:clamp(26px,8vw,42px);margin:0 0 18px}
+ .locker-choice{padding:9px 8px}
+ .locker-choice img{height:65px;width:65px}
+}
