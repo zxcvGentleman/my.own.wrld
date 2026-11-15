@@ -13,8 +13,6 @@ image.addEventListener("error",()=>{
 });
 function select(n){current=(n+3)%3;const skin=skins[current];image.classList.remove("locker-pop");image.src=skin.image;image.alt=skin.name+" Fortnite outfit";name.textContent=skin.name;link.href=skin.url;buttons.forEach((b,i)=>{b.classList.toggle("is-selected",i===current);b.setAttribute("aria-pressed",String(i===current))});void image.offsetWidth;image.classList.add("locker-pop");try{localStorage.setItem("mow:locker",String(current))}catch(e){}}
 buttons.forEach((b,i)=>b.addEventListener("click",()=>select(i)));
-document.getElementById("locker-prev").addEventListener("click",()=>select(current-1));
-document.getElementById("locker-next").addEventListener("click",()=>select(current+1));
 document.getElementById("locker-showcase").addEventListener("keydown",e=>{if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;e.preventDefault();select(current+(e.key==="ArrowRight"?1:-1));buttons[current].focus()});
 try{const value=Number(localStorage.getItem("mow:locker"));if(Number.isInteger(value)&&value>=0&&value<3)current=value}catch(e){}
 select(current);
